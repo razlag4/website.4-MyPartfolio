@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>PORTFOLIO — Miguel Sokolov</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="fonts.css">
+</head>
+<body>
+  <!-- video background -->
+  <div class="video-wrap" aria-hidden="true">
+    <video autoplay muted loop id="bg-video" playsinline>
+      <source src="Photos/HeadBackground.mp4" type="video/mp4">
+    </video>
+    <!-- stars canvas -->
+    <canvas id="stars-canvas"></canvas>
+  </div>
+
+  <!-- decorative cubes -->
+  <div id="scene" class="scene" aria-hidden="true">
+    <img src="Photos/cube.png" alt="" class="cube cube--left">
+    <img src="Photos/cube.png" alt="" class="cube cube--right">
+  </div>
+
+  <main class="page">
+    <header class="hero" id="home">
+      <div class="hero-inner">
+        <div class="titles">
+          <h1 class="title-main">PORTFOLIO</h1>
+          <h2 class="title-sub">Miguel Sokolov</h2>
+
+          <div id="whoim" class="whoim">
+            <img src="Photos/Myphoto.jpg" alt="Miguel Sokolov" id="myphotohead" />
+            <div class="who-text">
+              <p class="role">MIDL — Frontend Engineer</p>
+              <p class="meta">Clean UI · Perf-focused · Animation-friendly</p>
+            </div>
+          </div>
+
+          <p class="intro">
+            I build fast, elegant interfaces with a strong focus on usability and performance. Below you’ll find sections with my case studies and skills.
+          </p>
+
+          <nav class="toc" aria-label="Navigation">
+            <button class="btn" data-target="#about">about</button>
+            <button class="btn" data-target="#skills">skills</button>
+            <button class="btn" data-target="#projects">projects</button>
+          </nav>
+        </div>
+
+        <a class="cta" href="#projects">view portfolio</a>
+      </div>
+    </header>
+
+
+
+    <section class="next-block">
+    <section id="about" class="section section--glass">
+      <h3 class="section-title">About me</h3>
+      <div class="about-grid">
+        <div class="card">
+          <h4>Summary</h4>
+          <p>Frontend engineer passionate about optimization, motion, and thoughtful UX. Experienced with HTML, CSS, JS, and modern frameworks.</p>
+        </div>
+
+        <div class="card">
+        <h4>Philosophy</h4>
+        <p>I don’t follow the cookie-cutter corporate styles or the same animations you see everywhere. I love creating interfaces with my own touch—unique, expressive, and true to my vision. Every detail matters, from speed to readability, to the little interactions that make a product feel alive.</p>
+        </div>
+
+
+        <div class="card">
+          <h4>Tools</h4>
+          <p>VSCode · Git · Chrome DevTools · Blender (basic 3D elements) · Figma</p>
+        </div>
+
+        <div class="card">
+          <h4>Contact</h4>
+        <div class="contact-links">
+  <a href="mailto:forgptnafik@gmail.com">Email</a>
+  <a href="https://t.me/razlak" target="_blank">Telegram</a>
+  <a href="https://wa.me/14243168962" target="_blank">WhatsApp</a>
+</div>
+
+          </p>
+        </div>
+      </div>
+    </section>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+  <h3 class="section-title">Skills</h3>
+  <div class="skills-row">
+    <span>HTML / CSS</span>
+    <span>JavaScript</span>
+    <span>React / Vite</span>
+    <span>Performance</span>
+  </div>
+</section>
+
+
+   <!-- Projects -->
+<section id="projects" class="section section--projects">
+  <h3 class="section-title">Projects</h3>
+  <div class="projects-grid">
+    
+    <article class="project-card">
+      <div class="project-bg" style="background-image:url('https://media.sketchfab.com/models/44e7a9cfed67431e827d0cbaabd462c7/thumbnails/f641c88350c84c848d3b898fcfef5028/ba223710144b47258489e56ffdb14494.jpeg')"></div>
+      <div class="project-info">
+        <h4>Noir Residence</h4>
+        <p>A concept website for fictional apartments - dark, atmospheric, focused on aesthetics and a sense of solitude.</p>
+        <a class="project-link" href="https://razlag4.github.io/website.4-Oasis-apartments/">Go to website</a>
+      </div>
+    </article>
+
+    <article class="project-card">
+      <div class="project-bg" style="background-image:url('https://cdnb.artstation.com/p/assets/images/images/054/285/405/large/timthespy-1.jpg?1664201140')"></div>
+      <div class="project-info">
+        <h4>Luxury Motion</h4>
+        <p>Porsche website concept — clean interface, dark aesthetics, and smooth animations.</p>
+        <a class="project-link" href="https://razlag4.github.io/website.5-PorscheCars/">Go to website</a>
+      </div>
+    </article>
+
+    <article class="project-card">
+      <div class="project-bg" style="background-image:url('https://image.api.playstation.com/vulcan/ap/rnd/202306/1214/9ec3be8acd540e2f84e7362cb492e8d53b93e8a7bea4cd5f.png')"></div>
+      <div class="project-info">
+        <h4>Ghost Hunt</h4>
+        <p>An atmospheric website with dark aesthetics and smooth animations, capturing the tension of ghost hunting.</p>
+        <a class="project-link" href="https://razlag4.github.io/website.1-Phasmophobia/">Go to website</a>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<a href="https://github.com/razlag4">
+<button class="btn-github">
+  <svg
+    width="16"
+    height="16"
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M7.99992 1.33331C7.12444 1.33331 6.25753 1.50575 5.4487 1.84078C4.63986 2.17581 3.90493 2.66688 3.28587 3.28593C2.03563 4.53618 1.33325 6.23187 1.33325 7.99998C1.33325 10.9466 3.24659 13.4466 5.89325 14.3333C6.22659 14.3866 6.33325 14.18 6.33325 14C6.33325 13.8466 6.33325 13.4266 6.33325 12.8733C4.48659 13.2733 4.09325 11.98 4.09325 11.98C3.78659 11.2066 3.35325 11 3.35325 11C2.74659 10.5866 3.39992 10.6 3.39992 10.6C4.06659 10.6466 4.41992 11.2866 4.41992 11.2866C4.99992 12.3 5.97992 12 6.35992 11.84C6.41992 11.4066 6.59325 11.1133 6.77992 10.9466C5.29992 10.78 3.74659 10.2066 3.74659 7.66665C3.74659 6.92665 3.99992 6.33331 4.43325 5.85998C4.36659 5.69331 4.13325 4.99998 4.49992 4.09998C4.49992 4.09998 5.05992 3.91998 6.33325 4.77998C6.85992 4.63331 7.43325 4.55998 7.99992 4.55998C8.56659 4.55998 9.13992 4.63331 9.66659 4.77998C10.9399 3.91998 11.4999 4.09998 11.4999 4.09998C11.8666 4.99998 11.6333 5.69331 11.5666 5.85998C11.9999 6.33331 12.2533 6.92665 12.2533 7.66665C12.2533 10.2133 10.6933 10.7733 9.20659 10.94C9.44659 11.1466 9.66659 11.5533 9.66659 12.1733C9.66659 13.0666 9.66659 13.7866 9.66659 14C9.66659 14.18 9.77325 14.3933 10.1133 14.3333C12.7599 13.44 14.6666 10.9466 14.6666 7.99998C14.6666 7.1245 14.4941 6.25759 14.1591 5.44876C13.8241 4.63992 13.333 3.90499 12.714 3.28593C12.0949 2.66688 11.36 2.17581 10.5511 1.84078C9.7423 1.50575 8.8754 1.33331 7.99992 1.33331V1.33331Z"
+      fill="currentcolor"
+    ></path>
+  </svg>
+  <span>View on Github</span>
+</button>
+</a>
+
+
+
+    <footer class="footer">
+      <small>© <span id="year"></span> Miguel Sokolov — Frontend.</small>
+    </footer>
+
+  </main>
+
+  <script src="main.js" defer></script>
+</body>
+</html>

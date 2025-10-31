@@ -1,0 +1,44 @@
+:root {
+  --bg-900: #05060a;
+  --bg-800: #0b0c11;
+  --glass: rgba(255,255,255,0.03);
+  --muted: rgba(255,255,255,0.75);
+  --muted-2: rgba(255,255,255,0.55);
+  --accent-1: #6ee7ff;
+  --accent-2: #a16bff;
+  --max-w: 1100px;
+  --who-size: 44px;
+  --radius: 12px;
+  --trans: 260ms cubic-bezier(.2,.9,.2,1);
+}
+
+
+@media (max-width: 980px) {
+  :root {
+    --who-size: 40px;
+  }
+  .title-main {
+    font-size: 56px;
+  }
+  .project-body img {
+    height: 140px;
+  }
+}
+
+@media (max-width: 640px) {
+  :root {
+    --who-size: 36px;
+  }
+  .title-main {
+    font-size: 40px;
+  }
+  .hero-inner {
+    padding: 18px;
+  }
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+  .project-body img {
+    height: 120px;
+  }
+}
